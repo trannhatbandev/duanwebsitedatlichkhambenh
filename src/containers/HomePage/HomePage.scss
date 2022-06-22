@@ -1,0 +1,30 @@
+.slick-prev {
+  left: -10 !important;
+  z-index: 1000 !important;
+  height: 48px !important;
+  width: 44px !important;
+  background: #fff !important;
+  border: 2px solid #d7d7d7 !important;
+  &:hover {
+    background: #f5e4e4 !important;
+  }
+}
+.slick-prev::before,
+.slick-next::before {
+  font-family: FontAwesome !important;
+  color: red !important;
+}
+.slick-next {
+  right: 5px !important;
+  z-index: 1000 !important;
+  height: 48px !important;
+  width: 44px !important;
+  background: #fff !important;
+  border: 2px solid #d7d7d7 !important;
+  &:hover {
+    background: #f5e4e4 !important;
+  }
+}
+.slick-disabled {
+  display: none !important;
+}

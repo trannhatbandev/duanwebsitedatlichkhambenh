@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login {
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  .container {
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    border-radius: 2rem;
+    background: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .content {
+    padding: 15px;
+    .input {
+      margin: 1rem 0;
+      .custom-input-password {
+        position: relative;
+      }
+      i {
+        position: absolute;
+        right: 7px;
+        top: 9px;
+        cursor: pointer;
+      }
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+    button {
+      background: #23a6d5;
+    }
+    button:hover {
+      background: #23d5ab;
+    }
+    a:hover {
+      color: #23a6d5;
+      cursor: pointer;
+    }
+  }
+}

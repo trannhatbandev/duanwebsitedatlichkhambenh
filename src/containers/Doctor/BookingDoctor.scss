@@ -1,0 +1,26 @@
+.container {
+  .info-doctor {
+    display: flex;
+    .content-left {
+      background-size: cover;
+      background-repeat: no-repeat;
+      // background-position: center;
+      width: 200px;
+      height: 150px;
+      border-radius: 10%;
+    }
+    .content-right {
+      width: calc(100% - 80px);
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+
+      .up {
+        font-weight: 600;
+      }
+      .down {
+        text-align: justify;
+      }
+    }
+  }
+}
