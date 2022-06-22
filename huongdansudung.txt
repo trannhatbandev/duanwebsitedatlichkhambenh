@@ -1,0 +1,11 @@
+- cài nodejs mới nhất, cài npm mới nhất
+1.split terminal
+2.terminal thứ nhất dùng lệnh cd ReactJS, terminal thứ hai dùng lệnh cd Nodejs
+3.cả hai terminal dùng lệnh npm install
+4. cả hai terminal dùng lệnh npm audit
+5. ở terminal nodejs dùng lệnh cd src sau đó lần lượt chạy 4 câu lệnh sau:
+npm install @babel/cli -g
+npm install @babel/core -g
+npm install @babel/node -g
+npm install @babel/preset-env -g
+6.sau đó dùng cd.. ở cả hai terminal và dùng npm start chạy cả hai terminal

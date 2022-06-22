@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liệt kê users</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .table tr td .updateUser{
+            color: green;
+        }
+        .table tr td .deleteUser{
+            margin-left: 2rem;
+            color: red;
+        }
+        .table tr td .updateUser:hover{
+            color: blue;
+        }
+        .table tr td .deleteUser:hover{
+            margin-left: 2rem;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Liệt kê Users</h2> 
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Address</th>
+                <th>Sex</th>
+                <th>Role</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <% for(let i=0; i < datatable.length; i++) { %>
+                    <tr>
+                      <td><%= datatable[i].firstName %></td>
+                      <td><%= datatable[i].lastName %></td>
+                      <td><%= datatable[i].address %></td>
+                      <td><%= datatable[i].gender %></td>
+                      <td>
+                          <%= datatable[i].roleId  %>
+                      </td>
+                     
+                      <td><a href="/edit-user?id=<%= datatable[i].id %>" class="updateUser">Cập nhật</a><a href="/delete-user?id=<%= datatable[i].id %>" class="deleteUser">Xóa</a></td>
+                    </tr>
+                 <% } %>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</body>
+</html>
